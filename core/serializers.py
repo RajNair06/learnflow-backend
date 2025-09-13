@@ -4,7 +4,9 @@ from models import Goal,Progress
 class GoalSerializer(ModelSerializer):
     model=Goal
     fields='__all__'
+    
 
 class ProgressSerializer(ModelSerializer):
     model=Progress
     fields='__all__'
+    

@@ -1,11 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User 
-from django.utils import timezone
+
 
 # Create your models here.
 class Goal(models.Model):
+    class CategoryType(models.TextChoices):
+        PRIMARY='Primary'
+        SECONDARY='Secondary'
+        MINOR='Minor'
     goal_name=models.TextField(blank=False)
     user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='goal')
+    category=models.TextField(blank=False,default=CategoryType.PRIMARY,choices=CategoryType.choices)
     is_complete=models.BooleanField(default=False)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
@@ -26,6 +31,8 @@ class Progress(models.Model):
 
 def __str__(self):
     return f"Progress:{self.progress}-goal:{self.goal.goal_name}-complete:{self.is_complete}-created_at:{self.created_at}"
+
+
 
 
 
