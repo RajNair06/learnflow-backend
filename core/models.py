@@ -12,6 +12,7 @@ class Goal(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='goal')
     category=models.TextField(blank=False,default=CategoryType.PRIMARY,choices=CategoryType.choices)
     is_complete=models.BooleanField(default=False)
+    deadline=models.DateField(blank=True,null=True)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
