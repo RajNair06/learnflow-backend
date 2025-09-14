@@ -34,6 +34,7 @@ class GoalsAppJWTTests(TestCase):
             "category": "Primary",
             "is_complete": False,
             "deadline": "2025-12-31"
+            
         }
         response = self.client.post(url, data, format="json")
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)

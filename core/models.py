@@ -27,7 +27,15 @@ class Progress(models.Model):
     goal=models.ForeignKey(Goal,on_delete=models.CASCADE,related_name='progress')
     is_complete=models.BooleanField(default=False)
     created_at=models.DateTimeField(auto_now_add=True)
+    logged_hours=models.DurationField(blank=True,null=True)
+    total_hours=models.DurationField(blank=True,null=True)
     updated_at=models.DateTimeField(auto_now=True)
+
+    @property
+    def percentage_complete(self):
+        return self.logged_hours.total_seconds()/self.total_hours.total_seconds*100
+
+
 
 
 def __str__(self):

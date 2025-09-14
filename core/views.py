@@ -14,16 +14,21 @@ class ListUsers(APIView):
 class GoalsView(APIView):
     permission_classes=[IsAuthenticated]
     
-    def get(self,request):
+    def get(self,request,goalNum=None):
         goals = Goal.objects.filter(user=request.user)
         serializer = GoalSerializer(goals, many=True)
-        return Response(serializer.data)
+        if goalNum:
+            goal=serializer.data[goalNum-1]
+        else:
+            
+            
+            return Response(serializer.data)
 
     def post(self, request):
         serializer = GoalSerializer(data=request.data)
         if serializer.is_valid():
             goal = serializer.save(user=request.user)
-            return Response(serializer.data, status=201)
+            return Response(GoalSerializer(goal).data, status=201)
         return Response(serializer.errors, status=400)
 
 
