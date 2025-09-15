@@ -33,7 +33,18 @@ class Progress(models.Model):
 
     @property
     def percentage_complete(self):
-        return self.logged_hours.total_seconds()/self.total_hours.total_seconds()*100
+        if self.total_hours and self.total_hours.total_seconds() > 0:
+            return (self.logged_hours.total_seconds() / self.total_hours.total_seconds()) * 100
+        return 0
+    
+    def save(self,*args,**kwargs):
+        if self.total_hours and self.logged_hours>=self.total_hours:
+            self.is_complete=True
+        else:
+            self.is_complete=False
+        super().save(*args,**kwargs)
+    
+
 
 
 
