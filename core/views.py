@@ -35,18 +35,24 @@ class GoalsView(APIView):
 class ProgressView(APIView):
     permission_classes=[IsAuthenticated]
     
-    def get(self,request,goalNum,progressNum=None):
-        goals = Goal.objects.filter(user=request.user)
-        serializeGoals = GoalSerializer(goals, many=True)
-        goal=serializeGoals.data[goalNum-1]
-        progress=Progress.objects.filter(goal=goal)
-        serializeProgress=ProgressSerializer(progress,many=True)
+    def get(self, request, goalNum, progressNum=None):
+        goals = Goal.objects.filter(user=request.user).order_by("id")
+        try:
+            goal = goals[goalNum - 1]
+        except IndexError:
+            return Response({"error": "invalid goalNum"}, status=404)
+
+        progresses = Progress.objects.filter(goal=goal).order_by("id")
+
         if progressNum:
-            progress=serializeProgress.data[progressNum-1]
-            return Response(progress)
-       
-        else:
-            return Response(serializeProgress.data)
+            try:
+                progress = progresses[progressNum - 1]
+            except IndexError:
+                return Response({"error": "invalid progressNum"}, status=404)
+            return Response(ProgressSerializer(progress).data, status=200)
+
+        return Response(ProgressSerializer(progresses, many=True).data, status=200)
+
     
     def post(self,request,goalNum):
         goals=Goal.objects.filter(user=request.user).order_by("id")
@@ -62,6 +68,27 @@ class ProgressView(APIView):
             return Response(ProgressSerializer(progress).data,status=201)
         
         return Response(serializer.errors,status=400)
+    
+    def patch(self, request, goalNum, progressNum):
+            goals = Goal.objects.filter(user=request.user).order_by("id")
+            try:
+                goal = goals[goalNum - 1]
+            except IndexError:
+                return Response({"error": "invalid goalNum"}, status=404)
+
+            progresses = Progress.objects.filter(goal=goal).order_by("id")
+            try:
+                progress = progresses[progressNum - 1]
+            except IndexError:
+                return Response({"error": "invalid progressNum"}, status=404)
+
+            
+            progress.logged_hours = request.data.get("logged_hours", progress.logged_hours)
+            if progress.logged_hours == progress.total_hours:
+                progress.is_complete = True
+            progress.save()
+
+            return Response(ProgressSerializer(progress).data, status=200)
 
 
 
