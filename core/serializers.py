@@ -12,9 +12,11 @@ class GoalSerializer(ModelSerializer):
 class ProgressSerializer(ModelSerializer):
     class Meta:
         model = Progress
-        fields = ["id", "progress", "goal","logged_hours","total_hours","percentage_complte", "is_complete", "created_at", "updated_at"]
-        read_only_fields = ["percentage_complete", "created_at", "updated_at"]
+        fields = ["id", "progress", "goal","logged_hours","total_hours","percentage_complete", "is_complete", "created_at", "updated_at"]
+        read_only_fields = ["goal","percentage_complete", "created_at", "updated_at"]
         extra_kwargs = {"goal": {"read_only": True}}  
+    
+    
 
 class UserSerializer(ModelSerializer):
     class Meta:

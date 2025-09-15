@@ -33,7 +33,7 @@ class Progress(models.Model):
 
     @property
     def percentage_complete(self):
-        return self.logged_hours.total_seconds()/self.total_hours.total_seconds*100
+        return self.logged_hours.total_seconds()/self.total_hours.total_seconds()*100
 
 
 
