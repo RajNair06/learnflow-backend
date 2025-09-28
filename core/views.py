@@ -2,9 +2,14 @@ from rest_framework.views import APIView
 from django.contrib.auth.models import User
 from .models import Goal,Progress
 from rest_framework import status
+
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .serializers import GoalSerializer,ProgressSerializer
+from .pagination import CustomPagination
+
+
+
 
 class ListUsers(APIView):
     def get(self,request):
@@ -13,14 +18,33 @@ class ListUsers(APIView):
 
 class GoalsView(APIView):
     permission_classes=[IsAuthenticated]
+    pagination_class=CustomPagination
+    
     
     def get(self,request,goalNum=None):
+        
         goals = Goal.objects.filter(user=request.user)
-        serializer = GoalSerializer(goals, many=True)
+        category=request.query_params.get('category')
+        if category:
+            goals=goals.filter(category=category)
+        
+        
+        
+
         if goalNum:
-            goal=serializer.data[goalNum-1]
-            return Response(goal)
+            try:
+                goal = goals.order_by('id')[goalNum-1] 
+                serializer = GoalSerializer(goal) 
+                return Response(serializer.data)
+            except IndexError:
+                return Response({"error": "Goal not found"}, status=status.HTTP_404_NOT_FOUND)
         else:
+            paginator=self.pagination_class()
+            page=paginator.paginate_queryset(goals,request)
+            if page is not None:
+                serializer = GoalSerializer(page, many=True)
+                return paginator.get_paginated_response(serializer.data)
+            serializer = GoalSerializer(goals, many=True)
                      
             return Response(serializer.data)
 
