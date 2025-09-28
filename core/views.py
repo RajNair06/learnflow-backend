@@ -25,8 +25,11 @@ class GoalsView(APIView):
         
         goals = Goal.objects.filter(user=request.user)
         category=request.query_params.get('category')
+        is_complete=request.query_params.get('is_complete')
         if category:
             goals=goals.filter(category=category)
+        if is_complete:
+            goals=goals.filter(is_complete=is_complete)
         
         
         
