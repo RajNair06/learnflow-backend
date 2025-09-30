@@ -2,13 +2,67 @@ from rest_framework.views import APIView
 from django.contrib.auth.models import User
 from .models import Goal,Progress
 from rest_framework import status
-
+from django.db.models import Sum,Value,ExpressionWrapper, F, DecimalField
+from django.db.models.functions import TruncWeek,Coalesce,Extract
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .serializers import GoalSerializer,ProgressSerializer
+from .serializers import GoalSerializer,ProgressSerializer,WeeklySummarySerializer
 from .pagination import CustomPagination
 
+class WeeklySummaryView(APIView):
+    permission_classes = [IsAuthenticated]
 
+    def get(self, request, goalNum=None):
+        try:
+            
+            goals = Goal.objects.filter(user=request.user).order_by('id')
+            
+            if goalNum is not None:
+                
+                if goalNum < 1 or goalNum > goals.count():
+                    return Response(
+                        {'error': 'Invalid goal number'},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+                
+                goal = goals[goalNum - 1]
+                queryset = Progress.objects.filter(goal=goal)
+            else:
+                
+                queryset = Progress.objects.filter(goal__user=request.user)
+
+            
+            weekly_data = queryset.annotate(
+                week_start=TruncWeek('created_at')
+            ).values('week_start').annotate(
+                total_hours=Coalesce(
+                    ExpressionWrapper(
+                        # Extract hours from interval sum
+                        Sum(
+                            Extract('logged_hours', 'epoch') / 3600.0  # Convert seconds to hours
+                        ),
+                        output_field=DecimalField(max_digits=10, decimal_places=2)
+                    ),
+                    Value(0.0, output_field=DecimalField(max_digits=10, decimal_places=2)),
+                    output_field=DecimalField(max_digits=10, decimal_places=2)
+                )
+            ).order_by('week_start')
+
+            
+            serializer = WeeklySummarySerializer(weekly_data, many=True)
+            return Response(serializer.data)
+        except IndexError:
+            return Response(
+                {'error': 'Goal not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response(
+                {'error': f'Server error: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+            
 
 
 class ListUsers(APIView):

@@ -1,4 +1,5 @@
 from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 from .models import Goal, Progress
 from django.contrib.auth.models import User
 
@@ -16,7 +17,13 @@ class ProgressSerializer(ModelSerializer):
         read_only_fields = ["goal","percentage_complete", "created_at", "updated_at"]
         extra_kwargs = {"goal": {"read_only": True}}  
     
-    
+class WeeklySummarySerializer(serializers.Serializer):
+    week_start = serializers.DateTimeField()
+    total_hours = serializers.DecimalField(max_digits=10, decimal_places=2)
+
+class MonthlySummarySerializer(serializers.Serializer):
+    month_start = serializers.DateTimeField()
+    total_hours = serializers.DecimalField(max_digits=10, decimal_places=2)
 
 class UserSerializer(ModelSerializer):
     class Meta:
