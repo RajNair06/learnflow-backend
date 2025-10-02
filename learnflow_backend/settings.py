@@ -29,6 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL='core.CustomUser'
+
 
 # Application definition
 
@@ -83,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': f'{os.getenv("PGDATABASE")}',
         'USER':f'{os.getenv("PGUSER")}',
-        
+        'PASSWORD': os.getenv('PGPASSWORD'),
         'HOST':f'{os.getenv("PGHOST")}',
         'PORT':f'{os.getenv("PGPORT")}'
     }
@@ -114,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

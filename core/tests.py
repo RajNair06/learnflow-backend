@@ -1,14 +1,14 @@
 from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework import status
-from django.contrib.auth.models import User
-from .models import Goal,Progress
+
+from .models import Goal,Progress,CustomUser
 from datetime import timedelta
 
 class GoalsAppJWTTests(TestCase):
     def setUp(self):
         self.client = APIClient()
-        self.user = User.objects.create_user(
+        self.user = CustomUser.objects.create_user(
             username="testuser",
             password="testpass123",
             email="test@example.com"
@@ -76,7 +76,7 @@ class ProgressViewTests(TestCase):
     def setUp(self):
         
         # Create a user and authenticate
-        self.user = User.objects.create_user(username="testuser", password="password123")
+        self.user = CustomUser.objects.create_user(username="testuser", password="password123")
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
 

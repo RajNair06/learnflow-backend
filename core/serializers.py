@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
-from .models import Goal, Progress
-from django.contrib.auth.models import User
+from .models import Goal, Progress,CustomUser
+
 
 class GoalSerializer(ModelSerializer):
     class Meta:
@@ -27,6 +27,6 @@ class MonthlySummarySerializer(serializers.Serializer):
 
 class UserSerializer(ModelSerializer):
     class Meta:
-        model = User
+        model = CustomUser
         fields = '__all__'
         extra_kwargs = {"password": {"write_only": True}}

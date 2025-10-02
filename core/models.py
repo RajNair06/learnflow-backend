@@ -1,8 +1,19 @@
 from django.db import models
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import AbstractUser 
 from datetime import timedelta
 from django.db.models import Sum
 from django.db.models.functions import Coalesce
+
+class CustomUser(AbstractUser):
+    TIER_CHOICES=[
+        ('free','Free'),
+        ('premium','Premium'),
+    ]
+    tier=models.CharField(max_length=10,choices=TIER_CHOICES,default='free')
+
+    def __str__(self):
+        return self.username
+
 
 
 # Create your models here.
@@ -12,7 +23,7 @@ class Goal(models.Model):
         SECONDARY='Secondary'
         MINOR='Minor'
     goal_name=models.TextField(blank=False)
-    user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='goal')
+    user=models.ForeignKey(CustomUser,on_delete=models.CASCADE,related_name='goal')
     category=models.TextField(blank=False,default=CategoryType.PRIMARY,choices=CategoryType.choices)
     is_complete=models.BooleanField(default=False)
     deadline=models.DateField(blank=True,null=True)
@@ -76,8 +87,8 @@ class Progress(models.Model):
 
 
 
-def __str__(self):
-    return f"Progress:{self.progress}-goal:{self.goal.goal_name}-complete:{self.is_complete}-created_at:{self.created_at}"
+    def __str__(self):
+     return f"Progress:{self.progress}-goal:{self.goal.goal_name}-complete:{self.is_complete}-created_at:{self.created_at}"
 
 
 

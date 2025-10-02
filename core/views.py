@@ -1,13 +1,64 @@
 from rest_framework.views import APIView
-from django.contrib.auth.models import User
-from .models import Goal,Progress
+
+from .models import Goal,Progress,CustomUser
 from rest_framework import status
-from django.db.models import Sum,Value,ExpressionWrapper, F, DecimalField
-from django.db.models.functions import TruncWeek,Coalesce,Extract
+from django.db.models import Sum,Value,ExpressionWrapper, DecimalField
+from django.db.models.functions import TruncWeek,Coalesce,Extract,TruncMonth
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .serializers import GoalSerializer,ProgressSerializer,WeeklySummarySerializer
+from .serializers import GoalSerializer,ProgressSerializer,WeeklySummarySerializer,MonthlySummarySerializer
 from .pagination import CustomPagination
+
+
+class MonthlySummaryView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, goalNum=None):
+        try:
+            # Filter goals for the authenticated user, ordered consistently
+            goals = Goal.objects.filter(user=request.user).order_by('id')
+            
+            if goalNum is not None:
+                # Validate goalNum (1-based index)
+                if goalNum < 1 or goalNum > goals.count():
+                    return Response(
+                        {'error': 'Invalid goal number'},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+                # Get the nth goal (0-based index internally)
+                goal = goals[goalNum - 1]
+                queryset = Progress.objects.filter(goal=goal)
+            else:
+                # If no goalNum, aggregate across all goals for the user
+                queryset = Progress.objects.filter(goal__user=request.user)
+
+            # Monthly summary: group by month, sum logged_hours (converted to hours)
+            monthly_data = queryset.annotate(
+                month_start=TruncMonth('created_at')
+            ).values('month_start').annotate(
+                total_hours=Coalesce(
+                    ExpressionWrapper(
+                        Sum(Extract('logged_hours', 'epoch') / 3600.0),  # Convert seconds to hours
+                        output_field=DecimalField(max_digits=10, decimal_places=2)
+                    ),
+                    Value(0.0, output_field=DecimalField(max_digits=10, decimal_places=2)),
+                    output_field=DecimalField(max_digits=10, decimal_places=2)
+                )
+            ).order_by('month_start')
+
+            # Serialize the data
+            serializer = MonthlySummarySerializer(monthly_data, many=True)
+            return Response(serializer.data)
+        except IndexError:
+            return Response(
+                {'error': 'Goal not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response(
+                {'error': f'Server error: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 class WeeklySummaryView(APIView):
     permission_classes = [IsAuthenticated]
@@ -67,7 +118,7 @@ class WeeklySummaryView(APIView):
 
 class ListUsers(APIView):
     def get(self,request):
-        usernames=[user.username for user in User.objects.all()]
+        usernames=[user.username for user in CustomUser.objects.all()]
         return Response(usernames)
 
 class GoalsView(APIView):
@@ -189,17 +240,19 @@ class RegsisterUser(APIView):
         email=body.get("email")
         first_name=body.get("first_name")
         last_name=body.get("last_name")
+        tier=body.get("tier")
 
         if not username or not password:
             return Response({"error": "Username and password are required"}, status=status.HTTP_400_BAD_REQUEST)
         
 
-        user = User.objects.create_user(
+        user = CustomUser.objects.create_user(
             username=username,
             password=password,
             email=email,
             first_name=first_name,
-            last_name=last_name
+            last_name=last_name,
+            tier=tier
         )
 
         return Response(
@@ -209,6 +262,7 @@ class RegsisterUser(APIView):
                 "email": user.email,
                 "first_name": user.first_name,
                 "last_name": user.last_name,
+                "tier":user.tier
             },
             status=status.HTTP_201_CREATED
         )
