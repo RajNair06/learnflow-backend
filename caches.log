@@ -1,0 +1,10 @@
+INFO 2025-10-04 16:10:53,852 autoreload Watching for file changes with StatReloader
+WARNING 2025-10-04 16:11:11,384 log Unauthorized: /api/summary/monthly/
+INFO 2025-10-04 16:11:39,582 views Cache miss for key:monthly_summary_1_all
+INFO 2025-10-04 16:11:57,443 views Cache hit for key: monthly_summary_1_all
+INFO 2025-10-04 16:12:42,496 views Cache miss for key:weekly_summary_1_2
+WARNING 2025-10-04 16:12:42,738 log Bad Request: /api/summary/weekly/2/
+INFO 2025-10-04 16:12:55,150 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 16:13:02,979 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 16:13:09,379 views Cache miss for key:weekly_summary_1_all
+INFO 2025-10-04 16:13:20,501 views Cache hit for key: weekly_summary_1_all

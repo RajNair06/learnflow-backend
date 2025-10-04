@@ -92,6 +92,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
@@ -141,4 +142,56 @@ REST_FRAMEWORK={
     'DEFAULT_THROTTLE_CLASSES': [
         'core.throttling.TierUserThrottle', 
     ],
+}
+
+#Cache config
+
+CACHES={
+    'default':{
+        'BACKEND':'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION':'unique-learnflow'
+    }
+}
+
+MONTHLY_SUMMARY_CACHE_TIMEOUT=300
+WEEKLY_SUMMARY_CACHE_TIMEOUT=300
+
+LOGGING={
+    'version':1,
+    'disable_existing_loggers':False,
+    'formatters':{
+        'verbose':{
+            'format':'{levelname} {asctime} {module} {message}',
+            'style':'{'
+        }
+    },
+    'filters':{
+        'cache_miss_only':{
+            '()':'django.utils.log.CallbackFilter',
+            'callback':lambda record:getattr(record,'cache_status','')=='miss'
+        }
+    },
+    'handlers':{
+        'file':{
+            'level':'INFO',
+            'class':'logging.FileHandler',
+            'filename':'caches.log',
+            'formatter':'verbose'
+        },
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'formatter':'verbose',
+            'filters': ['cache_miss_only'],
+
+        }
+    },
+    'loggers': {
+        '': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        }
+    }
+
 }

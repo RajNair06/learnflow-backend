@@ -8,12 +8,24 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .serializers import GoalSerializer,ProgressSerializer,WeeklySummarySerializer,MonthlySummarySerializer
 from .pagination import CustomPagination
+from django.core.cache import cache
+from django.conf import settings
+import logging
+
+logger=logging.getLogger(__name__)
 
 
 class MonthlySummaryView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request, goalNum=None):
+        cache_key = f"monthly_summary_{request.user.id}_{goalNum if goalNum is not None else 'all'}"
+        cached_data=cache.get(cache_key)
+        if cached_data is not None:
+            logger.info(f"Cache hit for key: {cache_key}",extra={'cache_status':'hit'})
+            return Response(cached_data)
+        
+        logger.info(f'Cache miss for key:{cache_key}',extra={'cache_status':'miss'})
         try:
             # Filter goals for the authenticated user, ordered consistently
             goals = Goal.objects.filter(user=request.user).order_by('id')
@@ -48,6 +60,11 @@ class MonthlySummaryView(APIView):
 
             # Serialize the data
             serializer = MonthlySummarySerializer(monthly_data, many=True)
+
+            cache_timeout=getattr(settings,'MONTHLY_SUMMARY_CACHE_TIMEOUT',300)
+
+
+            cache.set(cache_key,serializer.data,timeout=cache_timeout)
             return Response(serializer.data)
         except IndexError:
             return Response(
@@ -64,6 +81,13 @@ class WeeklySummaryView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request, goalNum=None):
+        cache_key = f"weekly_summary_{request.user.id}_{goalNum if goalNum is not None else 'all'}"
+        cached_data=cache.get(cache_key)
+        if cached_data is not None:
+            logger.info(f"Cache hit for key: {cache_key}",extra={'cache_status':'hit'})
+            return Response(cached_data)
+        
+        logger.info(f'Cache miss for key:{cache_key}',extra={'cache_status':'miss'})
         try:
             
             goals = Goal.objects.filter(user=request.user).order_by('id')
@@ -101,6 +125,10 @@ class WeeklySummaryView(APIView):
 
             
             serializer = WeeklySummarySerializer(weekly_data, many=True)
+            cache_timeout=getattr(settings,'WEEKLY_SUMMARY_CACHE_TIMEOUT',300)
+
+
+            cache.set(cache_key,serializer.data,timeout=cache_timeout)
             return Response(serializer.data)
         except IndexError:
             return Response(
