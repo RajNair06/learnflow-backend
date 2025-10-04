@@ -1,5 +1,5 @@
 from rest_framework.views import APIView
-
+from .throttling import TierUserThrottle
 from .models import Goal,Progress,CustomUser
 from rest_framework import status
 from django.db.models import Sum,Value,ExpressionWrapper, DecimalField
@@ -166,6 +166,7 @@ class GoalsView(APIView):
 
 class ProgressView(APIView):
     permission_classes=[IsAuthenticated]
+    throttle_classes=[TierUserThrottle]
     
     def get(self, request, goalNum, progressNum=None):
         goals = Goal.objects.filter(user=request.user).order_by("id")
