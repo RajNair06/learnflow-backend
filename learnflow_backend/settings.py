@@ -27,7 +27,7 @@ SECRET_KEY = f'{os.getenv("DJANGO_SECRET_KEY")}'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL='core.CustomUser'
 
@@ -138,10 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':(
          'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-    'DEFAULT_THROTTLE_CLASSES': [
-        'core.throttling.TierUserThrottle', 
-    ],
+    )
 }
 
 #Cache config

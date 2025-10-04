@@ -11,7 +11,7 @@ class CustomUserAdmin(UserAdmin):
     add_fieldsets=UserAdmin.add_fieldsets+(
         ('Tier Info',{'fields':('tier',)}),
     )
-    list_display=['username','email','tier']
+    list_display=['id','username','email','tier']
 
 
 

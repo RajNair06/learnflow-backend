@@ -8,3 +8,1066 @@ INFO 2025-10-04 16:12:55,150 views Cache miss for key:weekly_summary_1_1
 INFO 2025-10-04 16:13:02,979 views Cache hit for key: weekly_summary_1_1
 INFO 2025-10-04 16:13:09,379 views Cache miss for key:weekly_summary_1_all
 INFO 2025-10-04 16:13:20,501 views Cache hit for key: weekly_summary_1_all
+WARNING 2025-10-04 16:21:21,876 log Not Found: /
+WARNING 2025-10-04 16:21:25,108 log Not Found: /favicon.ico
+WARNING 2025-10-04 16:21:38,530 log Not Found: /
+WARNING 2025-10-04 17:54:32,191 log Not Found: /favicon.ico
+INFO 2025-10-04 17:57:44,699 autoreload /home/acer/learnflow_backend/core/admin.py changed, reloading.
+INFO 2025-10-04 17:58:08,339 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:41:43,181 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:43:51,116 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:44:03,772 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:44:04,625 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:44:14,031 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:44:14,652 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:44:43,491 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:44:44,179 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:44:47,606 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:44:48,347 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:44:57,673 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:44:58,472 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:45:02,872 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:45:03,371 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:45:09,770 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:45:10,345 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:45:20,351 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:45:21,171 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:45:28,742 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:45:29,284 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:45:31,572 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:45:32,223 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:13,162 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:13,991 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:16,299 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:17,671 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:19,175 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:19,650 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:21,910 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:22,406 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:25,758 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:26,456 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:28,821 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:29,388 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:46:43,905 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:46:44,465 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:47:02,351 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:47:03,300 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:47:20,119 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:47:29,449 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:47:51,153 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:47:51,715 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:47:58,114 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:47:58,724 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:48:09,498 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:48:10,157 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:48:27,034 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:48:27,618 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:48:51,742 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:48:52,371 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:48:58,922 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:48:59,613 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:49:10,159 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:49:10,683 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:49:38,434 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:49:38,128 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:52:37,799 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:52:38,670 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:52:52,504 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:52:53,303 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:03,367 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:04,355 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:07,979 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:09,053 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:11,807 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:12,898 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:17,724 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:17,549 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:21,225 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:22,609 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:46,532 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:47,377 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:53:51,874 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:53:52,899 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:56:28,136 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:56:29,061 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:56:39,911 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:56:40,814 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:57:06,966 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:57:07,998 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:57:11,950 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:57:12,820 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 18:57:17,267 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 18:57:19,165 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:01:14,897 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:02:15,584 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:05:53,832 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:05:54,633 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:06:15,346 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:06:16,334 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-04 19:10:21,448 log Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+INFO 2025-10-04 19:10:57,172 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-04 19:10:56,561 autoreload Watching for file changes with StatReloader
+ERROR 2025-10-04 19:11:02,365 log Internal Server Error: /api/summary/monthly/1/
+Traceback (most recent call last):
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/acer/learnflow/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/acer/learnflow/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/acer/learnflow_backend/core/views.py", line 28, in get
+    user=CustomUser.get(id=user_id)
+         ^^^^^^^^^^^^^^
+AttributeError: type object 'CustomUser' has no attribute 'get'
+INFO 2025-10-04 19:12:09,363 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:12:10,457 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:12:15,795 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:12:17,118 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:12:43,789 autoreload /home/acer/learnflow_backend/core/views.py changed, reloading.
+INFO 2025-10-04 19:12:44,732 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:12:52,684 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:12:54,549 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:12:55,559 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:12:56,584 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:12:58,168 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:12:59,178 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:00,191 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:01,221 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:01,033 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:02,044 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:03,045 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:04,059 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:05,079 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:06,131 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:07,147 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:08,158 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:09,171 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:10,183 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:11,197 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:12,211 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:13,228 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:14,239 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:15,255 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:16,273 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:17,290 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:18,310 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:19,322 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:20,332 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:21,339 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:22,356 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:23,366 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:24,383 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:25,390 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:26,408 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:27,419 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:28,428 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:29,441 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:30,449 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:31,461 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:32,477 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:32,250 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:33,255 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:34,264 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:35,273 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:36,285 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:37,298 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:38,308 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:39,311 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:40,317 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:41,322 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:42,332 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:43,342 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:44,355 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:45,367 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:46,377 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:47,385 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:48,395 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:49,411 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:50,417 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:51,437 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:52,442 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:53,449 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:54,452 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:55,465 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:56,481 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:57,494 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:58,508 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:13:59,517 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:00,526 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:01,543 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:02,551 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:03,565 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:03,370 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:04,375 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:05,376 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:06,376 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:07,383 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:08,394 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:09,415 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:10,427 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:11,454 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:12,466 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:13,470 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:14,485 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:15,496 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:16,508 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:17,514 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:18,523 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:19,545 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:20,554 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:21,565 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:22,571 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:23,572 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:24,577 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:25,579 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:26,593 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:27,604 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:28,780 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:29,789 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:30,802 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:31,813 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:14:32,936 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:33,189 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:33,448 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:33,700 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:33,954 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:34,206 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:34,462 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:34,716 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:14:35,070 views Cache hit for key: monthly_summary_1_1
+WARNING 2025-10-04 19:14:35,074 log Too Many Requests: /api/summary/monthly/1/
+INFO 2025-10-04 19:15:16,490 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-04 19:15:17,363 autoreload Watching for file changes with StatReloader
+INFO 2025-10-04 19:15:22,343 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:23,342 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:24,358 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:25,364 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:26,371 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:27,373 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:28,370 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:29,369 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:30,368 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:31,366 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:32,366 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:33,366 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:34,362 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:35,370 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:36,372 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:37,378 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:37,187 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:38,187 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:39,193 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:40,203 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:41,203 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:42,224 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:43,228 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:44,226 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:45,225 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:46,235 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:47,241 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:48,277 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:49,295 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:50,299 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:51,301 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:52,304 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:53,310 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:54,319 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:55,319 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:56,331 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:57,366 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:58,370 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:15:59,375 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:00,390 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:01,394 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:02,397 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:03,399 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:04,400 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:05,399 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:06,403 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:07,428 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:08,430 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:08,227 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:09,223 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:10,222 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:11,224 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:12,230 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:13,230 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:14,229 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:15,239 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:16,241 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:17,242 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:18,251 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:19,257 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:20,264 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:21,277 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:22,280 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:23,284 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:24,288 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:25,295 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:26,297 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:27,299 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:28,298 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:29,301 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:30,308 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:31,306 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:32,309 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:33,308 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:34,306 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:35,311 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:36,302 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:37,295 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:38,300 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:39,302 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:39,081 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:40,076 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:41,077 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:42,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:43,076 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:44,072 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:45,079 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:46,077 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:47,082 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:48,083 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:49,082 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:50,079 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:51,078 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:52,075 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:53,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:54,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:55,070 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:56,067 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:57,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:58,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:16:59,074 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:17:00,068 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:00,319 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:00,569 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:00,819 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:01,069 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:01,319 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:01,587 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:01,838 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:02,089 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:02,343 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:02,593 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:02,843 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:03,093 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:03,348 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:03,597 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:03,848 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:04,226 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:04,476 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:04,726 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:04,976 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:05,227 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:05,477 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:05,730 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:05,982 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:06,230 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:06,481 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:06,733 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:06,983 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:07,233 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:07,484 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:07,734 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:07,985 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:08,236 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:08,487 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:08,738 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:08,990 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:09,238 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:09,491 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:09,742 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:09,992 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,246 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,495 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,742 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:09,794 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,044 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,296 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,545 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:10,795 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:11,046 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:11,295 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:11,546 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:11,826 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:12,076 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:12,327 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:12,582 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:12,834 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:13,086 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:13,334 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:13,587 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:13,838 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:14,088 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:14,340 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:14,590 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:14,842 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:15,096 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:15,346 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:15,595 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:15,847 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:16,098 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:16,354 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:16,605 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:16,855 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:17,105 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:17,356 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:17,606 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:17,859 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:18,112 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:18,362 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:18,613 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:18,860 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:19,112 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:19,360 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:19,610 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:19,859 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:20,107 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:20,356 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:20,605 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:20,856 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:21,129 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:21,388 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:21,640 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:21,890 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:22,141 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:22,390 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:22,640 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:22,890 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:23,144 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:23,394 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:23,644 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:23,893 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:17:24,143 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:25,140 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:26,133 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:27,131 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:28,118 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:29,123 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:30,142 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:31,145 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:32,137 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:33,132 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:34,133 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:35,139 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:36,146 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:37,139 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:38,136 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:39,165 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:40,167 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:41,161 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:40,960 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:41,956 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:42,962 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:43,964 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:44,963 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:45,981 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:46,985 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:47,984 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:48,983 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:49,979 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:50,998 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:52,007 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:53,003 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:54,005 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:55,001 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:55,995 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:56,993 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:57,988 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:58,980 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:17:59,980 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:00,985 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:01,983 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:02,983 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:03,980 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:04,977 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:05,971 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:06,967 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:07,959 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:08,957 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:09,956 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:10,956 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:11,974 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:11,774 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:12,776 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:13,777 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:14,775 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:15,786 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:16,782 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:17,780 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:18,782 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:19,774 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:20,779 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:21,777 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:22,829 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:23,833 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:24,828 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:25,822 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:26,818 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:27,813 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:28,810 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:29,801 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:30,798 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:31,794 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:32,796 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:33,793 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:34,796 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:35,793 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:36,793 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:37,788 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:38,783 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:39,786 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:40,782 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:41,796 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:42,796 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:43,802 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:43,586 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:44,589 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:45,587 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:46,581 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:47,576 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:48,572 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:49,570 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:50,582 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:51,583 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:52,578 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:53,576 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:54,579 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:55,578 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:56,572 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:57,578 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:58,574 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:18:59,571 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:19:00,576 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:19:01,574 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:01,823 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:02,073 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:02,321 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:02,571 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:02,821 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:03,072 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:03,321 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:03,576 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:03,827 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:04,078 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:04,330 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:04,579 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:04,827 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:05,080 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:05,329 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:05,582 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:05,832 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:06,083 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:06,332 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:06,581 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:06,837 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:07,088 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:07,357 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:07,607 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:07,863 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:08,116 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:08,379 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:08,630 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:08,879 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:09,129 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:09,391 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:09,641 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:09,891 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:10,142 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:10,393 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:10,646 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:10,896 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:11,146 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:11,397 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:11,644 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:11,896 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:12,147 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:12,404 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:12,657 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:12,908 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:13,202 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:13,453 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:13,703 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:13,953 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,204 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,455 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,704 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,956 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:15,207 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,270 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,520 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:14,772 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:15,022 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:15,272 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:15,522 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:15,774 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:16,025 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:16,272 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:16,521 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:16,769 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:17,019 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:17,280 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:17,530 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:17,781 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:18,031 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:18,281 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:18,538 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:18,788 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:19,042 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:19,295 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:19,543 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:19,801 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:20,053 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:20,306 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:20,556 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:20,807 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:21,059 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:21,311 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:21,560 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:21,812 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:22,066 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:22,316 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:22,567 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:22,823 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:23,073 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:23,341 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:23,593 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:23,858 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:24,110 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:24,362 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:24,612 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:24,885 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:25,140 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:19:25,396 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:22:20,018 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:21,033 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:20,837 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:21,834 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:22,847 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:23,850 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:24,851 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:25,844 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:26,842 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:27,835 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:28,827 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:29,964 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:30,955 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:31,951 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:32,948 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:34,046 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:35,040 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:36,039 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:37,054 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:38,056 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:39,053 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:40,052 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:41,057 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:42,057 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:43,062 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:44,073 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:45,073 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:46,071 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:47,061 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:48,057 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:49,054 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:50,054 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:51,056 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:52,051 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:51,945 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:52,946 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:53,945 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:54,944 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:55,946 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:56,948 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:58,553 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:22:59,550 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:00,548 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:01,542 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:02,541 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:03,536 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:04,543 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:05,537 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:06,533 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:07,556 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:08,556 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:09,555 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:10,581 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:11,599 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:12,596 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:13,591 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:14,586 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:15,588 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:16,596 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:17,596 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:18,593 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:19,589 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:20,583 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:21,579 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:22,686 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:23,687 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:23,473 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:24,539 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:25,539 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:26,546 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:27,543 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:28,542 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:29,537 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:30,534 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:31,746 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:32,753 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:33,754 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:34,770 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:35,766 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:36,766 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:37,769 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:38,774 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:39,772 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:40,769 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:41,765 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:42,763 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:43,761 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:44,757 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:45,762 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:46,764 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:47,757 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:48,805 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:49,808 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:50,803 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:51,806 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:52,804 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:53,802 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:54,800 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:54,595 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:55,591 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:56,590 views Cache miss for key:monthly_summary_1_1
+INFO 2025-10-04 19:23:57,582 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:57,831 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:58,083 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:58,334 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:58,587 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:58,839 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:59,093 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:59,342 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:59,596 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:23:59,852 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:00,111 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:00,361 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:00,614 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:00,867 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:01,120 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:01,371 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:01,623 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:01,872 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:02,120 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:02,371 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:02,622 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:02,874 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:03,233 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:03,484 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:04,108 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:04,571 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:04,822 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:05,075 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:05,324 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:05,575 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:05,825 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:06,080 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:06,334 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:06,582 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:06,834 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:07,085 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:07,336 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:07,588 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:07,839 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:08,092 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:08,343 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:08,593 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:08,846 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:09,100 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:09,351 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:09,601 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:09,854 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:10,123 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:10,461 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:10,757 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:11,007 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:11,326 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:11,581 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:11,877 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:12,129 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:12,378 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:12,628 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:12,880 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:13,160 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:13,418 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:13,667 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:13,916 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:14,336 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:14,585 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:14,836 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:15,088 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:15,376 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:15,673 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:15,925 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:16,207 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:16,459 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:16,714 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:16,961 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:17,214 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:17,493 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:17,746 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:18,000 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:18,251 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:18,502 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:18,754 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:19,004 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:19,255 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:19,528 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:19,837 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:20,157 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:20,475 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:20,727 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:20,978 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:21,293 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:21,556 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:21,804 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:22,078 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:22,328 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:22,611 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:22,865 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:23,117 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:23,365 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:23,614 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:23,891 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:24,248 views Cache hit for key: monthly_summary_1_1
+INFO 2025-10-04 19:24:24,535 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:25,602 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:25,398 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:26,430 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:27,495 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:28,494 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:29,601 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:30,700 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:31,727 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:32,722 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:33,714 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:34,709 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:35,708 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:36,705 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:37,703 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:38,704 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:39,707 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:40,709 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:41,707 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:42,710 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:43,710 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:44,707 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:45,709 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:46,721 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:47,714 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:48,704 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:49,698 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:50,689 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:51,691 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:52,681 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:53,673 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:54,672 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:55,685 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:56,681 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:56,476 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:57,473 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:58,464 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:24:59,460 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:00,455 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:01,459 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:02,474 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:03,477 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:04,475 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:05,480 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:06,483 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:07,476 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:08,475 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:09,469 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:10,466 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:11,464 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:12,459 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:13,470 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:14,467 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:15,467 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:16,459 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:17,456 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:18,454 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:19,450 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:20,446 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:21,451 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:22,451 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:23,446 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:24,443 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:25,444 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:26,436 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:27,437 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:27,214 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:28,250 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:29,255 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:30,248 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:31,250 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:32,242 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:33,244 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:34,236 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:35,446 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:36,443 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:37,436 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:38,428 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:39,428 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:40,521 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:41,524 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:42,564 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:43,563 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:44,590 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:45,594 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:46,593 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:47,600 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:48,601 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:49,599 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:50,608 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:51,610 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:52,608 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:53,604 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:54,615 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:55,618 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:56,628 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:57,631 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:58,634 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:58,399 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:25:59,401 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:26:00,392 views Cache miss for key:weekly_summary_1_1
+INFO 2025-10-04 19:26:01,379 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:01,629 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:01,880 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:02,125 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:02,374 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:02,620 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:02,867 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:03,112 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:03,356 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:03,603 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:03,885 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:04,227 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:04,473 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:04,720 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:04,968 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:05,240 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:05,490 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:05,738 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:05,983 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:06,228 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:06,478 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:06,726 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:06,976 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:07,226 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:07,471 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:07,717 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:07,968 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:08,218 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:08,481 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:08,736 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:08,992 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:09,251 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:09,510 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:09,861 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:10,121 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:10,383 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:10,639 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:10,892 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:11,151 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:11,403 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:11,679 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:11,933 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:12,209 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:12,578 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:12,841 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:13,100 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:13,357 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:13,613 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:13,867 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:14,124 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:14,379 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:14,632 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:14,890 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:15,142 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:15,395 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:15,643 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:15,892 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:16,140 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:16,388 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:16,638 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:16,887 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:17,140 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:17,391 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:17,639 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:17,889 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:18,138 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:18,385 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:18,631 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:18,879 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:19,128 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:19,374 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:19,624 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:19,869 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:20,118 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:20,370 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:20,619 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:20,870 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:21,118 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:21,365 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:21,614 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:21,859 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:22,111 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:22,363 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:22,609 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:22,861 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:23,110 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:23,361 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:23,609 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:23,857 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:24,102 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:24,350 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:24,594 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:24,842 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:25,091 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:25,338 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:25,583 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:25,832 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:26,079 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:26,330 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-04 19:26:26,578 views Cache hit for key: weekly_summary_1_1
