@@ -16,18 +16,20 @@ logger=logging.getLogger(__name__)
 
 
 class MonthlySummaryView(APIView):
-    permission_classes = []#remove IsAuthenticated temporarily for benchmarking
+    permission_classes = [IsAuthenticated]#remove IsAuthenticated temporarily for benchmarking
 
     def get(self, request, goalNum=None):
         #temporary code block for benchmarking
+        """
         user_id=request.query_params.get('user_id',1)
         try:
             user_id = int(user_id)
         except ValueError:
             return Response({'error': 'Invalid user_id'}, status=status.HTTP_400_BAD_REQUEST)
         user=CustomUser.objects.get(id=user_id)
+        """
         #change request.user.id to user_id for benchmarking
-        cache_key = f"monthly_summary_{user_id}_{goalNum if goalNum is not None else 'all'}"
+        cache_key = f"monthly_summary_{request.user.id}_{goalNum if goalNum is not None else 'all'}"
         cached_data=cache.get(cache_key)
         if cached_data is not None:
             logger.info(f"Cache hit for key: {cache_key}",extra={'cache_status':'hit'})
@@ -36,8 +38,8 @@ class MonthlySummaryView(APIView):
         logger.info(f'Cache miss for key:{cache_key}',extra={'cache_status':'miss'})
         try:
             # Filter goals for the authenticated user, ordered consistently
-            #for benchmarking,filter by user_id=user_id replacing user=request.user
-            goals = Goal.objects.filter(user=user).order_by('id')
+            #for benchmarking,filter by user=user replacing user=request.user
+            goals = Goal.objects.filter(user=request.user).order_by('id')
             
             if goalNum is not None:
                 # Validate goalNum (1-based index)
@@ -51,8 +53,8 @@ class MonthlySummaryView(APIView):
                 queryset = Progress.objects.filter(goal=goal)
             else:
                 # If no goalNum, aggregate across all goals for the user
-                #for benchmarking,filter by goal__user_id=user_id by replacing goal__user=request.user 
-                queryset = Progress.objects.filter(goal__user=user)
+                #for benchmarking,filter by goal__user=user by replacing goal__user=request.user 
+                queryset = Progress.objects.filter(goal__user=request.user)
 
             # Monthly summary: group by month, sum logged_hours (converted to hours)
             monthly_data = queryset.annotate(
@@ -89,16 +91,18 @@ class MonthlySummaryView(APIView):
 
 class WeeklySummaryView(APIView):
     #refer the comments in MonthlySummaryView for changes before benchmarking
-    permission_classes = []
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, goalNum=None):
+        """
         user_id=request.query_params.get('user_id',1)
         try:
             user_id = int(user_id)
         except ValueError:
             return Response({'error': 'Invalid user_id'}, status=status.HTTP_400_BAD_REQUEST)
         user=CustomUser.objects.get(id=user_id)
-        cache_key = f"weekly_summary_{user_id}_{goalNum if goalNum is not None else 'all'}"
+        """
+        cache_key = f"weekly_summary_{request.user.id}_{goalNum if goalNum is not None else 'all'}"
         cached_data=cache.get(cache_key)
         if cached_data is not None:
             logger.info(f"Cache hit for key: {cache_key}",extra={'cache_status':'hit'})
@@ -107,7 +111,7 @@ class WeeklySummaryView(APIView):
         logger.info(f'Cache miss for key:{cache_key}',extra={'cache_status':'miss'})
         try:
             
-            goals = Goal.objects.filter(user=user).order_by('id')
+            goals = Goal.objects.filter(user=request.user).order_by('id')
             
             if goalNum is not None:
                 
@@ -121,7 +125,7 @@ class WeeklySummaryView(APIView):
                 queryset = Progress.objects.filter(goal=goal)
             else:
                 
-                queryset = Progress.objects.filter(goal__user=user)
+                queryset = Progress.objects.filter(goal__user=request.user)
 
             
             weekly_data = queryset.annotate(
