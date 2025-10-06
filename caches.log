@@ -1071,3 +1071,21 @@ INFO 2025-10-04 19:26:25,832 views Cache hit for key: weekly_summary_1_1
 INFO 2025-10-04 19:26:26,079 views Cache hit for key: weekly_summary_1_1
 INFO 2025-10-04 19:26:26,330 views Cache hit for key: weekly_summary_1_1
 INFO 2025-10-04 19:26:26,578 views Cache hit for key: weekly_summary_1_1
+INFO 2025-10-07 00:02:04,889 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:34:34,488 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:34:42,850 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:35:35,126 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:35:36,203 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:35:39,884 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:35:41,001 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:35:42,576 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:35:43,672 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:35:46,221 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:35:47,334 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:35:52,043 autoreload /home/acer/learnflow_backend/learnflow_backend/settings.py changed, reloading.
+INFO 2025-10-07 00:35:53,686 autoreload Watching for file changes with StatReloader
+INFO 2025-10-07 00:37:45,061 tasks Starting reminder task
+INFO 2025-10-07 00:37:47,115 tasks Found 1 inactive goals
+INFO 2025-10-07 00:37:47,358 tasks Sending reminder for goal 2 to test@example.com
+INFO 2025-10-07 00:37:47,367 tasks Email sent to test@example.com
+INFO 2025-10-07 00:37:47,611 tasks Reminder task completed

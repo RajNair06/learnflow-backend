@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from celery.schedules import crontab
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -182,6 +183,12 @@ LOGGING={
             'formatter':'verbose',
             'filters': ['cache_miss_only'],
 
+        },
+        'celery_console': {  
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+            
         }
     },
     'loggers': {
@@ -189,6 +196,16 @@ LOGGING={
             'handlers': ['file', 'console'],
             'level': 'INFO',
             'propagate': True,
+        },
+        'core.tasks': {  
+            'handlers': ['file', 'celery_console'],
+            'level': 'INFO',
+            'propagate': False, 
+        },
+        'django.core.mail': {  
+            'handlers': ['file', 'celery_console'],
+            'level': 'INFO',
+            'propagate': False,
         }
     }
 
@@ -200,3 +217,12 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+CELERY_BEAT_SCHEDULE = {
+    'send-reminder-emails': {
+        'task': 'core.tasks.send_reminder_emails',
+        'schedule': crontab(hour=0, minute=0),  
+    },
+}
