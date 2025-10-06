@@ -29,6 +29,8 @@ class Goal(models.Model):
     deadline=models.DateField(blank=True,null=True)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
+    last_progress_date=models.DateTimeField(null=True,blank=True)
+    last_reminder_sent_at=models.DateTimeField(null=True,blank=True)
 
     
 
