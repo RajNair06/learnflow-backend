@@ -12,10 +12,11 @@ A Django REST Framework-based goal tracking and progress management system with 
 
 ### Advanced Features
 - **Analytics Dashboard**: Weekly and monthly summary views with aggregated time tracking
-- **Intelligent Caching**: Performance-optimized with Django's caching framework
+- **Intelligent Caching**: Performance-optimized with Redis caching
 - **Automated Reminders**: Celery-based scheduled tasks to remind users about inactive goals
 - **Rate Limiting**: Tier-based API throttling (Free: 10/day, Premium: 1000/day)
 - **Pagination**: Customizable pagination for list endpoints
+- **Containerized**: Docker & Docker Compose for easy local development and deployment
 
 ## Tech Stack
 
@@ -24,16 +25,17 @@ A Django REST Framework-based goal tracking and progress management system with 
 - **Authentication**: SimpleJWT (JWT tokens)
 - **Database**: PostgreSQL
 - **Task Queue**: Celery with Redis broker
-- **Caching**: Django Local Memory Cache
+- **Caching**: Redis
 - **Scheduling**: Celery Beat
+- **Web Server**: Gunicorn
+- **Containerization**: Docker & Docker Compose
 
 ## Prerequisites
 
-- Python 3.12+
-- PostgreSQL
-- Redis Server
+- Docker & Docker Compose (recommended for easy setup)
+- OR Python 3.12+, PostgreSQL, and Redis (for manual setup)
 
-## Installation
+## Quick Start with Docker (Recommended)
 
 ### 1. Clone the repository
 ```bash
@@ -41,40 +43,79 @@ git clone <repository-url>
 cd learnflow_backend
 ```
 
-### 2. Create virtual environment
+### 2. Create environment file
 ```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+### 3. Start all services
+```bash
+docker-compose up -d
+```
+
+This will start:
+- **Web**: Django API on `http://localhost:8000`
+- **PostgreSQL**: Database (configure in .env)
+- **Redis**: Cache & message broker
+- **Celery Worker**: Background task processor
+- **Celery Beat**: Scheduled task scheduler
+
+### 4. Run migrations
+```bash
+docker-compose exec web python manage.py migrate
+```
+
+### 5. Create superuser (optional)
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+
+### 6. Access the API
+```bash
+curl http://localhost:8000/api/goals/
+```
+
+## Manual Setup (Without Docker)
+
+### 1. Clone and setup environment
+```bash
+git clone <repository-url>
+cd learnflow_backend
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 2. Install dependencies
 ```bash
-pip install django djangorestframework djangorestframework-simplejwt
-pip install psycopg2-binary python-dotenv celery redis django-celery-beat
-pip install tabulate  # For benchmark command
+pip install -r requirements.txt
 ```
 
-### 4. Environment Configuration
+### 3. Environment Configuration
 
 Create a `.env` file in the project root:
 
 ```env
 # Django
 DJANGO_SECRET_KEY=your-secret-key-here
+DEBUG=True
 
 # PostgreSQL Database
-PGDATABASE=your_database_name
-PGUSER=your_database_user
-PGPASSWORD=your_database_password
-PGHOST=localhost
-PGPORT=5432
+DATABASE_URL=postgresql://user:password@localhost:5432/learnflow
+
+# Redis
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+
+# Email (development)
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 ```
 
-### 5. Database Setup
+### 4. Database Setup
 
 ```bash
-# Create PostgreSQL database
-createdb your_database_name
+# Ensure PostgreSQL is running and create database
+createdb learnflow
 
 # Run migrations
 python manage.py migrate
@@ -83,21 +124,26 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-### 6. Start Services
+### 5. Start Services
 
-#### Terminal 1: Django Server
+**Terminal 1: Django Server**
 ```bash
 python manage.py runserver
 ```
 
-#### Terminal 2: Celery Worker
+**Terminal 2: Celery Worker**
 ```bash
 celery -A learnflow_backend worker --loglevel=info
 ```
 
-#### Terminal 3: Celery Beat Scheduler
+**Terminal 3: Celery Beat Scheduler**
 ```bash
 celery -A learnflow_backend beat --loglevel=info
+```
+
+**Terminal 4: Redis (if not running as service)**
+```bash
+redis-server
 ```
 
 ## API Endpoints
@@ -194,10 +240,42 @@ WEEKLY_SUMMARY_CACHE_TIMEOUT = 300   # 5 minutes
 
 ### Benchmark Cache Performance
 ```bash
+# With Docker
+docker-compose exec web python manage.py benchmark_cache --user_id=1
+
+# Without Docker
 python manage.py benchmark_cache --user_id=1
 ```
 
 Runs 100 requests each for weekly and monthly summaries with and without caching, displaying performance metrics.
+
+## Docker Compose Services
+
+### Web Service
+- Runs Gunicorn on port 8000
+- Auto-reloads on code changes (mounted volume)
+- Depends on Redis health check
+
+### Redis Service
+- Acts as cache and Celery message broker
+- Data persisted to `redis_data` volume
+- Health check ensures availability
+
+### Celery Worker Service
+- Processes background tasks
+- Depends on Redis
+- Logs to console at INFO level
+
+### Celery Beat Service
+- Runs scheduled tasks (e.g., reminder emails)
+- Depends on Redis
+- Single instance (don't scale without coordination)
+
+### Database
+Configure in `.env` using `DATABASE_URL`:
+```
+DATABASE_URL=postgresql://user:password@host:5432/dbname
+```
 
 ## Development
 
@@ -206,20 +284,28 @@ Runs 100 requests each for weekly and monthly summaries with and without caching
 learnflow_backend/
 ├── core/                          # Main application
 │   ├── management/commands/       # Custom Django commands
+│   │   └── benchmark_cache.py     # Cache performance testing
 │   ├── migrations/                # Database migrations
 │   ├── admin.py                   # Admin interface config
+│   ├── apps.py                    # App configuration
 │   ├── models.py                  # Database models
 │   ├── serializers.py             # DRF serializers
 │   ├── views.py                   # API views
 │   ├── urls.py                    # App URL routing
-│   ├── tasks.py                   # Celery tasks
-│   ├── throttling.py              # Custom throttling
-│   └── pagination.py              # Custom pagination
+│   ├── tasks.py                   # Celery background tasks
+│   ├── throttling.py              # Custom rate limiting
+│   ├── pagination.py              # Custom pagination
+│   └── tests.py                   # Unit tests
 ├── learnflow_backend/             # Project settings
 │   ├── settings.py                # Django settings
 │   ├── urls.py                    # Root URL config
 │   ├── celery.py                  # Celery configuration
+│   ├── asgi.py                    # ASGI config
 │   └── wsgi.py                    # WSGI config
+├── Dockerfile                     # Multi-stage Docker build
+├── docker-compose.yml             # Docker Compose configuration
+├── requirements.txt               # Python dependencies
+├── .env.example                   # Environment variables template
 └── manage.py                      # Django management script
 ```
 
@@ -287,7 +373,7 @@ curl -X GET http://localhost:8000/api/summary/weekly/ \
 ## Performance Features
 
 ### Caching Strategy
-- Weekly and monthly summaries are cached for 5 minutes
+- Weekly and monthly summaries cached in Redis for 5 minutes
 - Cache keys include user ID and goal number
 - Automatic cache invalidation on timeout
 - Benchmark command to measure cache effectiveness
@@ -297,6 +383,34 @@ curl -X GET http://localhost:8000/api/summary/weekly/ \
 - Efficient querysets with `select_related()` and `prefetch_related()`
 - Aggregation queries for summary views
 
+## Docker Commands
+
+### View logs
+```bash
+docker-compose logs -f web          # Django logs
+docker-compose logs -f celery       # Celery worker logs
+docker-compose logs -f celery-beat  # Celery Beat logs
+docker-compose logs -f redis        # Redis logs
+```
+
+### Execute Django commands
+```bash
+docker-compose exec web python manage.py <command>
+```
+
+### Stop services
+```bash
+docker-compose down
+```
+
+### Rebuild images (if Dockerfile changes)
+```bash
+docker-compose build --no-cache
+docker-compose up -d
+```
+
+
+
 ## Security
 
 - JWT-based authentication
@@ -304,50 +418,71 @@ curl -X GET http://localhost:8000/api/summary/weekly/ \
 - Password validation enforced
 - User-specific data isolation
 - Rate limiting to prevent abuse
+- Non-root user in Docker container
+- Environment variables for all secrets
 
 ## Production Considerations
 
-### Before Deployment
+### Before Production Deployment
 1. Set `DEBUG = False` in settings.py
-2. Configure `ALLOWED_HOSTS` properly
-3. Use environment variables for all secrets
-4. Switch from SQLite to PostgreSQL (already configured)
-5. Configure proper email backend (currently console)
-6. Set up Redis for production
-7. Use proper WSGI server (Gunicorn/uWSGI)
-8. Configure static file serving
-9. Set up SSL/TLS certificates
-10. Implement proper logging and monitoring
+2. Configure `ALLOWED_HOSTS` with your domain
+3. Use strong `DJANGO_SECRET_KEY`
+4. Configure proper email backend (SMTP)
+5. Set up SSL/TLS certificates
+6. Use managed database (AWS RDS, Heroku Postgres, etc.)
+7. Use managed Redis or dedicated instance
+8. Scale Celery workers based on load
+9. Set up monitoring and alerting
+10. Configure log aggregation
 
 ### Recommended Production Settings
 ```python
 DEBUG = False
-ALLOWED_HOSTS = ['yourdomain.com']
+ALLOWED_HOSTS = ['yourdomain.com', 'www.yourdomain.com']
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 31536000
+```
+
+### Production Docker Deployment
+```bash
+# Use environment-specific docker-compose
+docker-compose -f docker-compose.prod.yml up -d
+
+# Scale Celery workers
+docker-compose -f docker-compose.prod.yml up -d --scale celery=3
 ```
 
 ## Troubleshooting
 
 ### Common Issues
 
+**Docker services failing to start:**
+- Check Docker daemon is running
+- Verify ports 8000, 6379 are available
+- Review logs: `docker-compose logs -f`
+
 **Celery tasks not running:**
-- Ensure Redis is running: `redis-cli ping`
-- Check Celery worker is active
-- Verify Celery Beat is running
+- Ensure Redis container is healthy: `docker-compose ps`
+- Check Celery worker logs: `docker-compose logs celery`
+- Verify Celery Beat is running: `docker-compose logs celery-beat`
 
 **Database connection errors:**
-- Verify PostgreSQL is running
-- Check .env credentials
-- Ensure database exists
+- Verify DATABASE_URL in .env
+- Check PostgreSQL container/service is running
+- Ensure database migrations completed
 
 **Authentication fails:**
 - Check JWT token is not expired
-- Verify token is in Authorization header as `Bearer <token>`
+- Verify token format: `Bearer <token>`
+- Confirm user exists in database
 
-
+**Redis connection errors:**
+- Verify Redis container is healthy
+- Check CELERY_BROKER_URL in .env
+- Run `docker-compose restart redis`
 
 ## Support
 
