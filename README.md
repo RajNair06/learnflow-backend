@@ -11,7 +11,7 @@ A Django REST Framework-based goal tracking and progress management system with 
 - **Tier-based Access**: Free and Premium user tiers with different API rate limits
 
 ### Advanced Features
-- **Analytics Dashboard**: Weekly and monthly summary views with aggregated time tracking
+- **Summary**: Weekly and monthly summary views with aggregated time tracking
 - **Intelligent Caching**: Performance-optimized with Redis caching
 - **Automated Reminders**: Celery-based scheduled tasks to remind users about inactive goals
 - **Rate Limiting**: Tier-based API throttling (Free: 10/day, Premium: 1000/day)
